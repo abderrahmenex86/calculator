@@ -1,0 +1,129 @@
+* {
+    font-family: 'Comfortaa',
+    cursive;
+}
+#container {
+    display: grid;
+    grid-template-areas:
+    "result result result result"
+    "clear empty empty div"
+    "num7 num8 num9 mul"
+    "num4 num5 num6 add"
+    "num1 num2 num3 sub"
+    "num0 dot sign equals";
+    width: 550px;
+    gap: 30px 6px;
+}
+
+.screen {
+    color: white;
+    font-weight: bold;
+    grid-area: result;
+    background-color:#6c757d;
+    border-radius: 5px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 2;
+    padding: 2px 10px 2px 10px;
+}
+.screen #previous {
+    font-size: small;
+}
+.screen #result {
+    font-size: xx-large;
+}
+#num0 {
+    grid-area: num0;
+}
+#num1 {
+    grid-area: num1;
+}
+#num2 {
+    grid-area: num2;
+}
+
+#num3 {
+    grid-area: num3;
+}
+#num4 {
+    grid-area: num4;
+}
+#num5 {
+    grid-area: num5;
+}
+#num6 {
+    grid-area: num6;
+}
+
+#num7 {
+    grid-area: num7;
+}
+#num8 {
+    grid-area: num8;
+}
+
+#num9 {
+    grid-area: num9;
+}
+
+#dot {
+    grid-area:dot;
+}
+#sign {
+    grid-area:sign;
+}
+#opPar {
+    grid-area:opPar;
+}
+#clPar {
+    grid-area:clPar;
+}
+#clear {
+    grid-area:clear;
+}
+#eql {
+    grid-area:equals;
+}
+#add {
+    grid-area:add;
+}
+#sub {
+    grid-area:sub;
+}
+#mul {
+    grid-area:mul;
+}
+#div {
+    grid-area:div;
+}
+#clear {
+    grid-area: clear;
+}
+
+button {
+    min-width: 80px;
+    height: 60px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 4px #495057;
+}
+
+button:hover {
+    box-shadow: 0 2px #495057;
+    top: 1px;
+}
+
+button:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+}
+
